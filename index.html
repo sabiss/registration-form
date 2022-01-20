@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "style.css">
+    <!-----------------------------------------------------Google Fonts---------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>SabisTravels</title>
+</head>
+<body>
+    <header class = "cabecalho">
+        <h1 id = "title">Bem vindo ao <span class = "borda-destaque">SabisTravels</span></h1>
+        <p id="description">Se inscreva e tenha a melhor experiência em viagens!</p>
+    </header>
+    <form id="survey-form">
+        <label class = "label-formatacao" for = "nome" id="name-label">Nome
+            <input type = "text" id="nome" class="input-formatacao" placeholder="Digite seu nome" required>
+        </label>
+        <label class = "label-formatacao" for = "email" id="email-label">Email
+            <input type = "email" id = "email" class="input-formatacao" placeholder="seuemail@dominio.com" required>
+        </label>
+        <label class = "label-formatacao" for = "idade" id="number-label">Idade
+            <input type = "number" id="idade" class = "input-formatacao" placeholder="Informe sua idade" required>
+        </label>
+        <label class="label-formatacao label-destino" for="drop-viagens">Nossos Destinos
+            <select id="dropdown">
+                <option disabled selected value>Selecione um destino</option>
+                <option>Paris</option>
+                <option>Roma</option>
+                <option>Disney World - EUA</option>
+                <option>Ilhas Maldivas</option>
+                <option>Itália</option>
+            </select>
+        </label>
+        <fieldset class = "frequencia-radios">
+            <p class ="label-formatacao">• Qual sua frequencia de viagens conosco?</p>
+            <label class="label-radio">
+                <input type = "radio" value="Primeira-Vez" name = "frequencia" class = "radio-formatacao">Primeira Vez
+            </label>
+            <label class="label-radio">
+                <input type = "radio" value="De-vez-em-quando" name = "frequencia" class = "radio-formatacao">De vez em quando
+            </label>
+            <label class="label-radio">
+                <input type = "radio" value="Sempre" name = "frequencia" class = "radio-formatacao">Sempre
+            </label>
+        </fieldset>
+        <fieldset class = "classe">
+            <p class ="label-formatacao">Em qual classe quer viajar?</p>
+            <label class ="label-classes">
+                <input type = "checkbox" value="primeira-classe" name ="classe" class = "checkbox-formatacao" checked>Primeira Classe
+            </label>
+            <label class ="label-classes">
+                <input type = "checkbox" value="intermediaria" name ="classe" class = "checkbox-formatacao">Intermediária
+            </label>
+            <label class ="label-classes">
+                <input type = "checkbox" value="economica" name ="classe" class = "checkbox-formatacao">Econômica
+            </label>
+        </fieldset>
+        <label for = "comentario" class = "label-formatacao">Deixe um comentário para gente<span class ="comentario-destaque"> (opcional)</span>
+            <textarea class = "area-sugestoes" name="comentario" id ="comentario" placeholder="Digite aqui a sua sugestão..." rows="7" cols="5"></textarea>
+        </label>
+        <div class ="botao">
+            <input type ="submit" id = "submit" value = "Enviar">
+        </div>  
+    </form>
+</body>
+</html>
